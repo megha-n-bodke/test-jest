@@ -1,7 +1,8 @@
 const { stringLength, reverseString } = require("./stringLength");
 
 test("gives string length", () => {
-  expect(stringLength("megha")).toBe(5);
+  expect(stringLength("m")).toBeGreaterThan(0);
+  expect(stringLength("megha")).toBeLessThan(10);
 });
 
 test("returns reverse string", () => {
